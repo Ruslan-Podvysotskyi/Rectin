@@ -1,0 +1,164 @@
+$roboto: 'Roboto', sans-serif;
+
+.statistics
+    padding: 120px 10px 
+    background-image: url(../img/vector-bg.png)
+    background-color: #eaedf2
+
+.statistics
+    .stat-lined
+        background-color: #ced7e5
+        padding: 0 5px
+    .title
+        width: 950px
+        margin: 0 auto 47px
+        text-align: center
+    .subtitle
+        color: #464646
+        font-family: $roboto
+        font-size: 25px
+        font-weight: 500
+        text-align: center
+    .list-title 
+        color: #272727
+        font-family: $roboto
+        font-size: 30px
+        font-weight: 700
+        text-align: center
+        margin: 51px 0 38px 0
+    .stat-list
+        display: flex
+        margin: 0 0 75px 0
+        
+        li 
+            margin: 0 auto
+            text-align: center 
+            position: relative
+            &:nth-child(2)
+                &:before
+                    content: ''
+                    position: absolute
+                    top: 20px
+                    right: -30px
+                    height: 100px
+                    width: 2px
+                    background-color: #cbd1d9
+                &:after
+                    content: ''
+                    position: absolute
+                    top: 20px
+                    left: -30px
+                    height: 100px
+                    width: 2px
+                    background-color: #cbd1d9
+            .descr
+                color: #363636
+                font-family: $roboto
+                font-size: 22px
+                font-weight: 700
+                text-align: center
+                line-height: 1.25
+                margin: 43px 0 0 0
+                position: relative
+                &:before
+                    content: ''
+                    position: absolute
+                    top: -27px
+                    left: calc(50% - 15px)
+                    height: 5px
+                    width: 40px
+                    background-color: #3b4893
+
+@media screen and (max-width: 1199px)
+    .wrapper 
+        max-width: 1023px
+    .statistics
+        .title
+            margin: 0 auto 45px
+        .list-title
+            margin: 40px 0 35px
+        .stat-list
+            margin: 0 0 60px 
+            li 
+                width: 280px
+                br 
+                    display: none
+
+
+@media screen and (max-width: 1023px)
+    .wrapper 
+        max-width: 767px
+    .statistics 
+        padding: 0 10px
+        .title 
+            margin: 0px auto 40px
+            width: auto
+        .stat-list 
+            margin: 0 0 50px
+            li 
+                width: 225px
+                .descr
+                &:nth-child(2)
+                    &:before
+                        right: -20px
+                    &:after
+                        left: -20px
+
+@media screen and (max-width: 767px)
+    .wrapper 
+        max-width: 479px
+    .statistics 
+        .title 
+            margin: 0 auto 27px
+            br 
+                display: none
+        .stat-list
+            flex-wrap: wrap
+            margin: 0 0 35px
+            li 
+                width: 100%
+                &:nth-child(2)
+                    margin: 30px 0
+                    &:before
+                        display: none
+                    &:after
+                        display: none
+                .descr
+                    width: 90%
+                    margin: 43px auto 0 auto
+        .subtitle 
+            width: 80%
+            margin: auto
+            font-size: 20px
+        .list-title
+            font-size: 27px
+            margin: 35px 0 30px
+
+// @media screen and (max-width: 639px)
+
+@media screen and (max-width: 479px) 
+    .wrapper 
+        max-width: 320px
+    .statistics 
+        .title
+            margin: 0 auto 20px
+        .list-title
+            font-size: 20px
+            margin: 25px 0 20px
+        .stat-list
+            margin: 0 0 25px
+            li 
+                img
+                    width: 40%
+                    height: auto
+                .descr
+                    width: 100%
+                    margin: 30px auto 0
+                    font-size: 17px
+                    &:before
+                        top: -18px
+                        height: 3px
+ 
+
+
+    

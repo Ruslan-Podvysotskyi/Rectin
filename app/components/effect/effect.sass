@@ -1,0 +1,181 @@
+$roboto: 'Roboto', sans-serif;
+
+.effect
+    padding: 105px 10px 
+    .wrapper
+        position: relative
+    .title
+        width: 1080px
+        margin: 0 auto 21px
+        text-align: center
+    .mini-title 
+        color: #272727
+        font-family: $roboto
+        font-size: 30px
+        font-weight: 700
+        text-align: center
+        margin: 0 auto 126px
+    .bullets
+        display: flex
+        flex-wrap: wrap
+        flex-direction: column
+        height: 330px
+        li 
+            width: 39%
+            display: flex
+            justify-content: center
+            align-items: center
+            line-height: 1.25
+            &:nth-child(1)
+                text-align: right
+                margin: 0 260px 0 0
+                p 
+                    margin: 0 20px 0 0
+            &:nth-child(2)
+                margin: 74px 0
+                text-align: right
+                position: relative
+                p 
+                    margin: 0 20px 0 0
+                &:before
+                    content: ''
+                    position: absolute
+                    top: -35px
+                    left: 0
+                    width: 380px
+                    height: 2px
+                    background-color: #d9d9d9
+                &:after
+                    content: ''
+                    position: absolute
+                    bottom: -42px
+                    left: 0
+                    width: 380px
+                    height: 2px
+                    background-color: #d9d9d9
+            &:nth-child(3)
+                text-align: right
+                p 
+                    margin: 0 20px 0 0
+            &:nth-child(4)
+                p 
+                    margin: 0 0 0 20px
+            &:nth-child(5)
+                margin: 70px 0
+                position: relative
+                p 
+                    margin: 0 0 0 20px
+                &:before
+                    content: ''
+                    position: absolute
+                    top: -35px
+                    right: 0
+                    width: 380px
+                    height: 2px
+                    background-color: #d9d9d9
+                &:after
+                    content: ''
+                    position: absolute
+                    bottom: -37px
+                    right: 0
+                    width: 380px
+                    height: 2px
+                    background-color: #d9d9d9
+            &:nth-child(6)
+                p 
+                    margin: 0 0 0 20px
+            p 
+                margin: 0
+                padding: 0
+                width: 370px
+                color: #464646
+                font-family: $roboto
+                font-size: 18px
+                font-weight: 500
+                span 
+                    color: #363636
+                    font-family: $roboto
+                    font-size: 22px
+                    font-weight: 700
+    .pack
+        position: absolute
+        bottom: -110px
+        left: 345px
+        width: 376px
+        height: 523px
+        .back
+            position: absolute
+            top: 60px
+            left: 125px
+            background-color: #ecf1f5
+            width: 230px
+            height: 405px
+            border-top-right-radius: 40px
+            border-bottom-left-radius: 40px
+            z-index: 1
+        .product
+            position: absolute
+            top: 0
+            right: 50px
+            z-index: 3
+        .product-colp
+            position: absolute
+            bottom: -8px
+            left: 0
+            z-index: 4
+        .natural
+            position: absolute
+            bottom: 58px
+            right: 0
+            z-index: 2
+    .order 
+        background-color: #3b4893
+
+
+   
+
+@media screen and (max-width: 1199px)
+    .wrapper 
+        max-width: 1023px
+    .effect
+        .title
+            margin: 0 auto 45px
+        .mini-title
+            margin: 40px 0 35px
+       
+
+
+@media screen and (max-width: 1023px)
+    .wrapper 
+        max-width: 767px
+    .effect 
+        padding: 0 10px
+        .title 
+            margin: 0px auto 40px
+            width: auto
+       
+
+@media screen and (max-width: 767px)
+    .wrapper 
+        max-width: 479px
+    .effect 
+        .title 
+            margin: 0 auto 27px
+            br 
+                display: none
+        .mini-title
+            font-size: 27px
+            margin: 35px 0 30px
+
+// @media screen and (max-width: 639px)
+
+@media screen and (max-width: 479px) 
+    .wrapper 
+        max-width: 320px
+    .effect 
+        .title
+            margin: 0 auto 20px
+        .mini-title
+            font-size: 20px
+            margin: 25px 0 20px
+       

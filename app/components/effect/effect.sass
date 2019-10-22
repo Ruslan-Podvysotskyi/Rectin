@@ -2,6 +2,8 @@ $roboto: 'Roboto', sans-serif
 
 .effect
     padding: 105px 10px 120px
+    padding-left: 10px !important
+    padding-right: 10px !important
     .wrapper
         position: relative
     .title
@@ -174,47 +176,142 @@ $roboto: 'Roboto', sans-serif
    
 
 @media screen and (max-width: 1199px)
-    .wrapper 
-        max-width: 1023px
+    
     .effect
+        overflow-x: hidden
+        .wrapper 
+            max-width: 1023px
         .title
             margin: 0 auto 45px
         .mini-title
             margin: 40px 0 35px
+        .bul-pack
+            .bullets
+                height: 405px
+                li 
+                    &:nth-child(1)
+                        margin: 0 220px 0 0
+                    &:nth-child(2)
+                        margin: 74px 0
+                        text-align: right
+                        position: relative
+                    p 
+                        margin: 0 20px 0 0
+                    &:nth-child(2)
+                        &:before
+                            right: 40px
+                            left: auto
+                            width: 300px
+                        &:after
+                            right: 40px
+                            left: auto
+                            width: 300px
+                    &:nth-child(5)
+                        &:before
+                            left: 40px
+                            right: auto
+                            width: 300px
+                        &:after
+                            left: 40px
+                            right: auto
+                            width: 300px
+                    br 
+                        display: none
+                    p 
+                        width: 280px
+            .pack-c
+                bottom: -125px
+                left: 270px
        
 
 
 @media screen and (max-width: 1023px)
-    .wrapper 
-        max-width: 767px
+    
     .effect 
-        padding: 0 10px
+        .wrapper 
+            max-width: 767px
         .title 
-            margin: 0px auto 40px
+            margin: 0px auto
             width: auto
+        .mini-title 
+            margin: 30px 0 35px
+            font-size: 27px
+        .bul-pack 
+            margin: 0 0 40px
+            .bullets
+                height: 405px
+                li 
+                    width: 50%
+                    p 
+                        order: 2
+                    .bul 
+                        order: 1
+                    &:nth-child(1)
+                        margin: 0
+            .pack-c 
+                position: relative
+                bottom: auto
+                top: 15px
+                left: 140px
+        
        
 
 @media screen and (max-width: 767px)
-    .wrapper 
-        max-width: 479px
+    
     .effect 
+        .wrapper 
+            max-width: 479px
         .title 
             margin: 0 auto 27px
             br 
                 display: none
+        .bul-pack 
+            .bullets
+                height: auto
+                li 
+                    width: 100%
+                    margin: 0 0 30px !important
+                    p 
+                        width: 70%
+                        text-align: left
+                        margin: 0 0 0 20px !important
+                        font-size: 17px
+                        .bold
+                            font-size: 18px
+                    &:nth-child(2)
+                        &:before
+                            content: none
+                        &:after
+                            content: none
+                    &:nth-child(5)
+                        &:before
+                            content: none
+                        &:after
+                            content: none
+            .pack-c 
+                top: 0px
+                left: 10px
         .mini-title
-            font-size: 27px
-            margin: 35px 0 30px
+            font-size: 24px
+            margin: 30px 0 30px
 
 // @media screen and (max-width: 639px)
 
 @media screen and (max-width: 479px) 
-    .wrapper 
-        max-width: 320px
+    
     .effect 
+        .wrapper 
+            max-width: 320px
+        .bul-pack 
+            .bullets
+            .pack-c
+                left: -80px
+                .product-colp-c
+                    display: none
         .title
             margin: 0 auto 20px
         .mini-title
+            width: 230px
             font-size: 20px
-            margin: 25px 0 20px
+            margin: 25px auto 20px
        

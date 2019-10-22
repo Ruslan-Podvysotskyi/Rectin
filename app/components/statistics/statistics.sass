@@ -2,6 +2,8 @@ $roboto: 'Roboto', sans-serif;
 
 .statistics
     padding: 120px 10px 
+    padding-left: 10px !important
+    padding-right: 10px !important
     background-image: url(../img/vector-bg.png)
     background-color: #eaedf2
 
@@ -70,9 +72,11 @@ $roboto: 'Roboto', sans-serif;
                     background-color: #3b4893
 
 @media screen and (max-width: 1199px)
-    .wrapper 
-        max-width: 1023px
+    
     .statistics
+        width: 100%
+        .wrapper 
+            max-width: 1023px
         .title
             margin: 0 auto 45px
         .list-title
@@ -86,10 +90,10 @@ $roboto: 'Roboto', sans-serif;
 
 
 @media screen and (max-width: 1023px)
-    .wrapper 
-        max-width: 767px
+    
     .statistics 
-        padding: 0 10px
+        .wrapper 
+            max-width: 767px
         .title 
             margin: 0px auto 40px
             width: auto
@@ -105,9 +109,10 @@ $roboto: 'Roboto', sans-serif;
                         left: -20px
 
 @media screen and (max-width: 767px)
-    .wrapper 
-        max-width: 479px
+    
     .statistics 
+        .wrapper 
+            max-width: 479px
         .title 
             margin: 0 auto 27px
             br 
@@ -137,9 +142,10 @@ $roboto: 'Roboto', sans-serif;
 // @media screen and (max-width: 639px)
 
 @media screen and (max-width: 479px) 
-    .wrapper 
-        max-width: 320px
+    
     .statistics 
+        .wrapper 
+            max-width: 320px
         .title
             margin: 0 auto 20px
         .list-title

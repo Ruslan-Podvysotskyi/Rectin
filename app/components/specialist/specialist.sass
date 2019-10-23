@@ -3,7 +3,7 @@ $roboto: 'Roboto', sans-serif
 .specialist
     padding-left: 10px !important
     padding-right: 10px !important
-    padding: 86px 10px 116px
+    padding: 86px 10px 110px
     font-family: $roboto
     overflow-x: hidden
     min-height: 1000px
@@ -42,9 +42,13 @@ $roboto: 'Roboto', sans-serif
             position: relative
             .bg-rect
                 position: absolute
+                width: 100%
                 top: 200px
                 left: 0
                 z-index: 1
+                img
+                    width: 1170px
+                    height: 195px
                 &::after
                     content: ''
                     position: absolute
@@ -56,7 +60,7 @@ $roboto: 'Roboto', sans-serif
                 &::before
                     content: ''
                     position: absolute
-                    top: 0
+                    top: 1px
                     left: 390px
                     width: 40px
                     height: 4px
@@ -81,6 +85,8 @@ $roboto: 'Roboto', sans-serif
                     width: 45px
                     height: 28px
                     background-image: url(../img/arrow-grey-r.svg)
+                    background-repeat: no-repeat
+                    background-position: center center
                     transform: scaleX(-1)
                     z-index: 4
                     &:hover
@@ -94,6 +100,8 @@ $roboto: 'Roboto', sans-serif
                     width: 45px
                     height: 28px
                     background-image: url(../img/arrow-grey-r.svg)
+                    background-repeat: no-repeat
+                    background-position: center center
                     z-index: 4
                     &:hover
                         background-image: url(../img/arrow-orange-r.svg)
@@ -119,7 +127,7 @@ $roboto: 'Roboto', sans-serif
                                 transition: .4s
                             .prof
                                 display: none
-                                font-size: 18px
+                                font-size: 17px
                                 color: #707070
                                 font-style: italic
                         img 
@@ -142,7 +150,7 @@ $roboto: 'Roboto', sans-serif
                         display: flex
                         flex-wrap: wrap
                         .full-name
-                            width: 368px
+                            width: 350px
                             padding: 114px 0 0 66px
                             .name
                                 font-size: 30px
@@ -170,10 +178,163 @@ $roboto: 'Roboto', sans-serif
                 padding: 18px 0
                 font-size: 27px
                 border-bottom-width: 4px
-                margin: 20px 0 0 205px
                 z-index: 10
                 &:active
                     border-bottom: none
                     padding: 20px 0
 
+
+
+@media screen and (max-width: 1219px)
+    .specialist
+        .wrapper 
+            &.second
+                .bg-rect
+                    top: 185px
+
+
+@media screen and (max-width: 1199px)
+    .specialist
+        .wrapper 
+            max-width: 1023px
+            &.second
+                .bg-rect
+                    img
+                        width: 100%
+                    &::after
+                        top: 33px
+                        left: 603px
+                    &::before
+                        left: 365px
+                .multiple-items
+                    padding: 0 20px 0 20px
+                    .slick-prev
+                        left: 880px
+                    .slick-next
+                        left: 955px
+                    .slick-slide
+                        .opinion 
+                            width: 603px
+                    .slick-current
+                        width: 603px
+                        .doc 
+                            .full-name 
+                                width: 285px
+                                padding: 125px 0 0 36px
+                                .name
+                                    font-size: 26px
+                .btn
+                    right: 20px
+
+
+       
+
+
+@media screen and (max-width: 1023px)
+    
+    .specialist 
+        .wrapper 
+            max-width: 767px
+            &.second
+                .title
+                    margin: 0 0 40px 0
+                .bg-rect
+                    padding: 0 5%
+                    &::after
+                        content: none
+                    &::before
+                        left: 430px
+                .multiple-items
+                    height: auto
+                    padding: 0 20px 0 20px
+                    .slick-prev
+                        top: 5px
+                        left: 500px
+                        width: 60px
+                        height: 60px
+                        border: 1px solid #c8cfd7
+                        background-size: 60%
+                        border-radius: 50px
+                        transition: .4s
+                        &:hover
+                            border: 1px solid #db7732
+                            background-color: #ecf1f5
+                    .slick-next
+                        top: 35px
+                        left: 600px
+                        width: 60px
+                        height: 60px
+                        border: 1px solid #c8cfd7
+                        background-size: 60%
+                        border-radius: 50px
+                        transition: .4s
+                        &:hover
+                            border: 1px solid #db7732
+                            background-color: #ecf1f5
+                    .slick-slide
+                        .opinion 
+                            width: 610px
+                            text-align: justify
+                            line-height: 1.4
+                            margin: 85px 0 0 0
+                    .slick-current
+                        width: 730px
+                        padding: 0 50px
+                        .doc 
+                            .full-name 
+                                padding: 145px 0 0 60px
+                .btn
+                    position: static
+                    margin: 35px 0 0 calc(50% - 162.5px)
+                
         
+       
+
+@media screen and (max-width: 767px)
+    
+    .specialist 
+        .wrapper 
+            max-width: 479px
+            &.second
+                .title
+                    
+                .bg-rect
+                    
+  
+                    &::before
+                        
+                .multiple-items
+                    
+                    .slick-prev
+                        
+                        &:hover
+                            
+                    .slick-next
+                        
+
+                    .slick-slide
+                        .opinion 
+                            
+                    .slick-current
+                        
+                        .doc 
+                            .full-name 
+                                
+                .btn
+                    
+
+// @media screen and (max-width: 639px)
+
+@media screen and (max-width: 479px) 
+    
+    .specialist 
+        .wrapper 
+            max-width: 320px
+            .title
+                margin: 0 auto 20px
+            .btn
+                margin: 0 0 0 calc(50% - 130px)
+                max-width: 260px
+                font-size: 22px
+
+       

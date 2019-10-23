@@ -61,17 +61,21 @@ button {
 }
 
 .btn{
-    font-size: 18px;
-    font-weight: bold;
-    color: #fff;
-    background: linear-gradient(to right, #f97017 0%,#f68b4a 50%,#f97017 100%);
-    padding: 8px 0;
-    max-width: 140px;
-    width: 100%;
-    text-align: center;
-    border-radius: 50px;
-    cursor: pointer;
-    border-bottom: 2px solid #e8631d;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	background: linear-gradient(to right, #f97017 0%,#f68b4a 50%,#f97017 100%);
+	padding: 8px 0;
+	max-width: 140px;
+	width: 100%;
+	text-align: center;
+	border-radius: 50px;
+	cursor: pointer;
+	border-bottom: 2px solid #e8631d;
+	&:hover{
+		border-bottom-color: #c15114;
+		background: linear-gradient(to right, #f7461c 0%,#f6774a 50%,#f7461c 100%);
+	}
     &:active{
 		border-bottom: none;
 		padding: 10px 0;

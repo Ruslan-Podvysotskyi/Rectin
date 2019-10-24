@@ -6,7 +6,6 @@ $roboto: 'Roboto', sans-serif
     padding: 86px 10px 110px
     font-family: $roboto
     overflow-x: hidden
-    min-height: 1000px
     .wrapper
         &.first
             padding: 0 28px 0 0
@@ -196,7 +195,14 @@ $roboto: 'Roboto', sans-serif
 @media screen and (max-width: 1199px)
     .specialist
         .wrapper 
-            max-width: 1023px
+            max-width: 1023px 
+            &.first
+                padding: 0
+                .advan
+                    img 
+                        width: 140px
+                        height: auto
+                        margin: 0px 20px 0 0 !important
             &.second
                 .bg-rect
                     img
@@ -235,6 +241,16 @@ $roboto: 'Roboto', sans-serif
     .specialist 
         .wrapper 
             max-width: 767px
+            &.first
+                margin: 0 auto 80px
+                &::after 
+                    bottom: -40px
+                .advan
+                    img 
+                        width: 100px
+                        margin: 0px 15px 0 0 !important
+                    p 
+                        font-size: 17px
             &.second
                 .title
                     margin: 0 0 40px 0
@@ -258,7 +274,7 @@ $roboto: 'Roboto', sans-serif
                         transition: .4s
                         &:hover
                             border: 1px solid #db7732
-                            background-color: #ecf1f5
+                            background-color: #f0f5f8  
                     .slick-next
                         top: 35px
                         left: 600px
@@ -270,7 +286,7 @@ $roboto: 'Roboto', sans-serif
                         transition: .4s
                         &:hover
                             border: 1px solid #db7732
-                            background-color: #ecf1f5
+                            background-color: #f0f5f8  
                     .slick-slide
                         .opinion 
                             width: 610px
@@ -295,46 +311,130 @@ $roboto: 'Roboto', sans-serif
     .specialist 
         .wrapper 
             max-width: 479px
+            &.first
+                margin: 0 auto 60px
+                &::after 
+                    bottom: -30px
+                .advan
+                    flex-wrap: wrap
+                    justify-content: center
+                    align-items: flex-start
+                    img 
+                        margin: 0 0 10px 0 !important
+                    p 
+                        text-align: center
+            
             &.second
                 .title
-                    
+                    margin: 0 0 30px 0
                 .bg-rect
-                    
-  
+                    top: 125px
                     &::before
-                        
+                        content: none
                 .multiple-items
                     
                     .slick-prev
-                        
-                        &:hover
-                            
+                        top: 130px
+                        left: 270px  
+                        background-color: #f0f5f8  
+                        &:hover  
                     .slick-next
-                        
-
+                        top: 160px
+                        left: 370px
+                        background-color: #f0f5f8  
                     .slick-slide
                         .opinion 
                             
                     .slick-current
-                        
+                        width: 440px
+                        padding: 0 20px
+                        .opinion
+                            width: 400px
+                            line-height: 1.2
+                            font-size: 17px
+                            margin: 75px 0 0
                         .doc 
+                            img 
+                                width: 200px
+                                height: 150px
                             .full-name 
+                                padding: 37px 0 0 20px
+                                width: 195px
+                                .name
+                                    font-size: 19px
+                                    text-align: center
+                                .prof
+                                    font-size: 16px
+                                    text-align: center
                                 
                 .btn
+                    margin: 28px 0 0 calc(50% - 162.5px)
                     
 
-// @media screen and (max-width: 639px)
+@media screen and (max-width: 639px)
+    .specialist 
+        padding-left: 0 !important
+        padding-right: 0 !important
+        .wrapper 
+            &.second
+                .title
+                    padding: 0 50px
+                .bg-rect
+                    top: 116px
 
 @media screen and (max-width: 479px) 
-    
     .specialist 
         .wrapper 
             max-width: 320px
-            .title
-                margin: 0 auto 20px
-            .btn
-                margin: 0 0 0 calc(50% - 130px)
-                max-width: 260px
-                font-size: 22px
+            &.first
+                margin: 0 auto 50px
+                flex-wrap: wrap
+                &::after 
+                    width: 80%
+                    left: 10%
+                    bottom: -20px
+                .advan
+                    margin: 0 0 15px 50px
+                    flex-wrap: nowrap
+                    justify-content: center
+                    align-items: center
+                    img 
+                        margin: 0 15px 0 0 !important
+                    p 
+                        text-align: center
+            &.second
+                .bg-rect
+                    display: none
+                .title
+                    margin: 0 auto 20px
+                .multiple-items
+                    .slick-prev 
+                        width: 50px
+                        height: 50px
+                        top: 252px
+                        left: 75px
+                    .slick-next 
+                        width: 50px
+                        height: 50px
+                        top: 277px
+                        left: 200px
+                    .slick-current
+                        width: 280px
+                        .opinion 
+                            margin: 85px 0 0
+                            width: 240px
+                        .doc
+                            img 
+                                margin: 0 0 0 15px
+                                box-shadow: 10px 10px 0 0 rgba(236,241,245,1)
+                            .full-name 
+                                padding: 25px 0 0 0
+                                width: 100%
+                                .name 
+                                    margin: 0 0 5px
+                .btn
+                    margin: 25px 0 0 calc(50% - 130px)
+                    max-width: 260px
+                    font-size: 22px
 
        

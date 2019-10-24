@@ -20,8 +20,11 @@ button {
 	padding: 0;
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
-
 }
+
+input::-ms-clear {
+	display: none;
+ }
 
 .wrapper {
 	max-width: 1170px;

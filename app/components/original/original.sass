@@ -3,7 +3,7 @@ $roboto: 'Roboto', sans-serif
 .original
     padding-left: 10px !important
     padding-right: 10px !important
-    padding: 114px 10px 117px
+    padding: 115px 10px 117px
     font-family: $roboto
     overflow-x: hidden
     .wrapper
@@ -16,27 +16,136 @@ $roboto: 'Roboto', sans-serif
             font-size: 25px
             font-weight: 500
             text-align: center
-            margin: 0 auto 60px
+            margin: 0 auto 97px
             line-height: 1.2
             .blue 
                 color: #1c266b
-
-                // .btn
-                //     max-width: 19%
-                //     padding: 18px 0
-                //     font-size: 27px
-                //     border-bottom-width: 4px
-                //     z-index: 10
-                //     &:active
-                //         border-bottom: none
-                //         padding: 20px 0
+        .order-steps
+            display: flex
+            justify-content: space-between
+            padding: 0 50px
+            position: relative
+            &::after
+                content: ''
+                position: absolute
+                top: 133px
+                left: 343px
+                background-image: url(../img/line-grey.png)
+                width: 106px
+                height: 4px
+                z-index: -1
+            &::before
+                content: ''
+                position: absolute
+                top: 133px
+                right: 343px
+                background-image: url(../img/line-grey.png)
+                width: 106px
+                height: 4px
+                z-index: -1
+            .order
+                position: relative
+                width: 315px
+                text-align: center
+                &-number
+                    position: absolute
+                    z-index: 3
+                    top: -40px
+                    left: calc(50% - 23.5px)
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    font-size: 25px
+                    color: white
+                    font-weight: 700
+                    width: 47px
+                    height: 47px
+                    background-color: #324697
+                    border-radius: 50%
+                    box-shadow: 2px 2px 0px 0px rgba(15,33,109,1)
+                &-title
+                    font-size: 22px
+                    color: #363636
+                    font-weight: 500
+                &-descr
+                    font-size: 18px
+                    color: #838282
+                    font-weight: 300
+                    margin: 9px 0 0 0 
+                    line-height: 1.3
+                &-img 
+                    position: relative
+                    z-index: 0
+                    width: 270px
+                    height: 270px
+                    border-top-right-radius: 40px
+                    border-bottom-left-radius: 40px 
+                    background-color: #ecf1f5
+                    margin: 0 auto 33px auto 
+                &.first
+                    margin: 35px 0 0 0 
+                &.third
+                    margin: 35px 0 0 0 
+                    .order-img
+                        position: relative
+                        overflow: hidden
+                        .p 
+                            position: absolute
+                            top: 25px
+                            left: 45px
+                            z-index: 2
+                        .pp
+                            position: absolute
+                            top: 62px
+                            right: -4px
+                            z-index: 1
+        .consult
+            width: 100%
+            display: flex
+            border-top-right-radius: 40px
+            border-bottom-left-radius: 40px
+            border: 5px solid #f3f6f9
+            margin: 80px 0 0 0
+            padding: 25px 50px
+            img 
+                width: 70px
+                height: 70px
+            &-descr
+                margin: 0 0 0 30px
+                width: 580px
+                font-size: 18px
+                color: #363636
+                line-height: 1.4
+                .underlined
+                    text-decoration: underline
+                    text-decoration-color: #9a9a9a
+            .btn
+                max-width: 363px
+                padding: 18px 0
+                font-size: 27px
+                margin: 0 0 0 17px
+                border-bottom-width: 4px
+                &:active
+                    border-bottom: none
+                    padding: 20px 0
                             
+
+
 @media screen and (max-width: 1199px)
     .original
         .wrapper 
             max-width: 1023px
             .title
-                margin: 0 auto 45px
+                margin: 0 auto 20px
+            .order-steps 
+                .order 
+                    width: 280px
+                &:before 
+                    right: 300px
+                &:after 
+                    left: 300px
+            .consult
+                padding: 25px 30px
 
                     // .btn
                     //     max-width: 21%
@@ -52,14 +161,38 @@ $roboto: 'Roboto', sans-serif
         .wrapper 
             max-width: 767px
             .title 
-                margin: 0px auto 30px
+                margin: 0px auto 20px
                 width: auto
             .subtitle
                 font-size: 22px
-                margin: 0 0 40px 0
-
-                    // .btn
-                    //     max-width: 28%
+                margin: 0 0 65px 0
+            .order-steps
+                padding: 0
+                &:before 
+                    width: 53px
+                    height: 2px
+                    background-size: cover
+                    right: 225px
+                &:after 
+                    width: 53px
+                    height: 2px
+                    background-size: cover
+                    left: 225px
+                .order
+                    width: 240px
+                    &-number
+                    &-title
+                    &-descr
+                    &-img 
+                        width: 240px
+                        height: 240px
+                        margin: 0 auto 25px
+            .consult
+                flex-wrap: wrap
+                margin: 40px 0 0
+                justify-content: center
+                .btn
+                    margin: 20px auto 0 auto
 
 
                 
@@ -72,14 +205,40 @@ $roboto: 'Roboto', sans-serif
         .wrapper 
             max-width: 479px
             .title 
-                margin: 0 auto 25px
-                br 
-                    display: none
+                margin: 0 auto 20px
             .subtitle
-                margin: 0 0 30px
+                margin: 0px 0 62px
                 font-size: 18px
-                    // .btn
-                    //     max-width: 225px
+            .order-steps
+                flex-wrap: wrap
+                justify-content: center
+                &:before 
+                    content: none
+                &:after 
+                    content: none
+                .order
+                    width: 70%
+                    margin: 0 0 65px 0 !important
+                    &.third
+                        margin: 0 !important
+                    &-img 
+                        width: 280px
+                        height: 280px
+                        margin: 0 auto 20px
+            .consult
+                flex-wrap: wrap
+                margin: 30px 0 0
+                justify-content: center
+                padding: 25px
+                img 
+                    margin: 35px 0 0 0
+                    width: 50px
+                    height: 50px
+                &-descr
+                    width: 347px
+                    margin: 0 0 0 20px
+                .btn
+                    margin: 20px auto 0 auto
 
  
 
@@ -93,13 +252,33 @@ $roboto: 'Roboto', sans-serif
         .wrapper 
             max-width: 320px
             .title
-                margin: 0 auto 20px
+                margin: 0 auto 15px
             .subtitle
-                margin: 0 0 20px
+                margin: 0 0 60px
                 font-size: 16px
-
-                    // .btn
-                    //     font-size: 22px
-                    //     max-width: 200px
-
+            .order-steps
+                .order
+                    width: 100%
+                    margin: 0 0 65px 0 !important
+                    &-title
+                        font-size: 19px
+                    &-descr
+                        font-size: 17px
+            .consult
+                position: relative
+                margin: 47px 0 0
+                padding: 15px
+                img 
+                    position: absolute
+                    top: -27px
+                    left: calc(50% - 25px)
+                    margin: 0
+                &-descr
+                    width: 100%
+                    margin: 25px 0 0 0px
+                    text-align: center
+                .btn
+                    font-size: 20px
+                    margin: 20px auto 0 auto
+                    padding: 15px 0
                             

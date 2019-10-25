@@ -39,7 +39,7 @@
                         <span class="seconds time__cont-val"></span>
                     </div>
                 </div>
-                <button class="btn">
+                <button class="btn ever-popup-btn">
                     Заказать
                 </button>
             </div>
@@ -95,7 +95,78 @@
                     </div>
                 </div>
             </div>
-            <div class="form">
+            <div class="header__form">
+                <div class="form">
+                    <div class="form__sale">
+                        <div class="form__sale-procwrap">
+                            <p class="form__sale-proc">50%</p>
+                        </div>
+                        <div class="form__sale-descwrap">
+                            <p class="form__sale-desc">Скидка</p>
+                        </div>
+                    </div>
+                    <h2 class="form__title">
+                        Только сегодня!<br>
+                        <span class="form__title_color date-0">04 октября</span>
+                    </h2>
+                    <div class="form__price">
+                        <div class="form__price-val">
+                            <h5 class="form__price-title">Старая цена</h5>
+                            <p class="form__price-before">
+                                <span class="x_price_previous form__price-before_line">1980</span><span
+                                    class="x_currency form__price-before_size">руб</span>
+                            </p>
+                        </div>
+                        <div class="form__price-val">
+                            <h5 class="form__price-title">Новая цена</h5>
+                            <p class="form__price-after">
+                                <span class="x_price_current">990</span><span
+                                    class="x_currency form__price-after_size">руб</span><span
+                                    class="form__price-after_size">*</span>
+                            </p>
+                        </div>
+                    </div>
+                    <form action="/submit" method="post" class="x_order_form form__cont">
+                        <div class="form__input-wrap">
+                            <label for="input-name" class="form__input-icon">
+                                <img src="img/name.svg" alt="name">
+                            </label>
+
+                            <input id="input-name" type="text" name="name" required class="form__input"
+                                placeholder="Ваше имя">
+                        </div>
+                        <div class="form__select">
+                            <div class="x_country_select">
+                                <select class="country-select" name="country_code">
+                                    <option value="RU">Россия</option>
+                                    <option value="BY">Беларусь</option>
+                                    <option value="UA" selected="selected">Украина</option>
+                                    <option value="KZ">Казахстан</option>
+                                    <option value="KG">Кыргызстан</option>
+                                    <option value="GE">Грузия</option>
+                                    <option value="MD">Молдова</option>
+                                    <option value="TH">Тайланд</option>
+                                </select>
+                            </div>
+                            <div class="custom-select">
+                                <div class="selected"></div>
+
+                                <div class="options"></div>
+                            </div>
+                            <input type="tel" name="phone" required class="form__input form__input_select" placeholder="Ваш телефон">
+                        </div>
+    
+                        <button class="btn form__btn ever-popup-btn">
+                            Заказать<br>
+                            <span class="form__btn_size">со скидкой</span>
+                        </button>
+                    </form>
+                    <p class="form__star-desc">*при заказе курса</p>
+                </div>
+                <p class="form__privacy">
+                    Конфиденциальность личных
+                    данных гарантирована!
+                </p>
 
             </div>
         </div>

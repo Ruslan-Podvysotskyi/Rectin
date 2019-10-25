@@ -1,2 +1,2 @@
 
-//=include ../components/PopUp/PopUp.js
+//=include ../components/header/header.js

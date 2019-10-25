@@ -1,0 +1,224 @@
+$roboto: 'Roboto', sans-serif
+
+.usage
+    padding-left: 10px !important
+    padding-right: 10px !important
+    padding: 111px 10px 120px
+    font-family: $roboto
+    overflow-x: hidden
+    .wrapper
+        position: relative
+        .title
+            text-align: center
+            margin: 0 0 46px 0
+        .btn
+            max-width: 315px
+            padding: 18px 0
+            font-size: 27px
+            border-bottom-width: 4px
+            margin: 20px 0 0 205px
+            &:active
+                border-bottom: none
+                padding: 20px 0
+        .arrow-grey
+            position: absolute
+            width: 103px
+            height: 404px
+            top: 229px
+            left: 87px
+            z-index: 1
+        .how-to-use-list
+            margin: 80px 0 0 50px
+            position: relative
+            z-index: 2
+            li 
+                display: flex
+                align-items: center
+                margin: 0 0 63px
+                &:nth-child(1),
+                &:nth-child(3)
+                    margin: 0 0 63px 31px
+                .descr
+                    font-size: 20px
+                    color: #838282
+                    line-height: 1.2
+                    .bold
+                        font-size: 22px
+                        color: #363636
+                        font-weight: 700
+                        .blu 
+                            color: #1c266b
+                .number
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    font-size: 40px
+                    color: white
+                    font-weight: 700
+                    width: 77px
+                    height: 77px
+                    background-color: #324697
+                    border-radius: 50%
+                    box-shadow: 3px 3px 0px 0px rgba(15,33,109,1)
+                    margin: 0 46px 0 0
+        .usage-pack
+            width: 480px
+            height: 550px
+            position: absolute
+            bottom: 0
+            right: 0
+            margin: 0 0 0 auto
+            &-product-colp
+                position: absolute
+                bottom: 0
+                left: 0
+                z-index: 4
+            &-product
+                position: absolute
+                bottom: 10px
+                right: 160px
+                z-index: 3
+            &-product-pack
+                position: absolute
+                top: 70px
+                right: -37px
+                z-index: 2
+            &-flower
+                position: absolute
+                top: 108px
+                left: -3px
+                z-index: 1
+
+@media screen and (max-width: 1199px)
+    .usage
+        .wrapper 
+            max-width: 1023px
+            .title
+                margin: 0 auto 45px
+            .how-to-use-list
+                margin: 80px 0 0
+            .usage-pack
+                right: -45px
+                &-flower
+                    top: 70px
+            .btn
+                margin: 20px 0 0 165px
+            .arrow-grey
+                top: 208px
+                left: 39px
+
+       
+
+
+@media screen and (max-width: 1023px)
+    
+    .usage 
+        .wrapper 
+            max-width: 767px
+            .title 
+                margin: 0px auto
+                width: auto
+            .how-to-use-list
+                li 
+                    p 
+                        width: 48%
+                    br 
+                        display: none
+                    &:nth-child(1),
+                    &:nth-child(3)
+                        margin: 0 0 63px 0
+                    .number
+                        margin: 0 25px 0 0
+                        width: 70px
+                        height: 70px
+            .btn
+                margin: 0
+            .usage-pack
+                &-flower
+                    display: none
+            .arrow-grey
+                display: none
+                
+        
+       
+
+@media screen and (max-width: 767px)
+    
+    .usage 
+        .wrapper 
+            max-width: 479px
+            .title 
+                margin: 0 auto 
+                br 
+                    display: none
+
+            .how-to-use-list
+                margin: 30px 0 0
+                li 
+                    &:nth-child(1),
+                    &:nth-child(2),
+                    &:nth-child(3)
+                        margin: 0 0 30px
+                    .descr
+                        width: 85%
+                    .number
+                        font-size: 30px
+                        width: 50px
+                        height: 50px
+                        box-shadow: 2px 2px 0px 0px rgba(15,33,109,1)
+                        margin: 0 35px 0 0
+            .usage-pack 
+                height: 533px
+                margin: 0 0 30px 0
+                position: relative
+                bottom: auto
+                right: auto
+            .btn
+                margin: 0 0 0 calc(50% - 157.5px)
+
+// @media screen and (max-width: 639px)
+
+@media screen and (max-width: 479px) 
+    
+    .usage 
+        .wrapper 
+            max-width: 320px
+            .title
+                margin: 0 auto 20px
+            .how-to-use-list
+                margin: 30px 0 0
+                li 
+                    &:nth-child(1),
+                    &:nth-child(2),
+                    &:nth-child(3)
+                        margin: 0 0 30px
+                    .descr
+                        width: 85%
+                        font-size: 16px
+                        .bold
+                            font-size: 17px
+                    .number
+                        font-size: 20px
+                        width: 40px
+                        height: 40px
+                        margin: 0 20px 0 0
+                    
+            .usage-pack 
+                margin: 35px 0 15px 0
+                width: 200px
+                height: 360px
+                &-product
+                    width: 60%
+                    bottom: 10px
+                    right: -3px
+                &-product-pack
+                    top: 0
+                    right: -150px
+                &-product-colp
+                    left: -10px
+            .btn
+                margin: 0 0 0 calc(50% - 130px)
+                max-width: 260px
+                font-size: 22px
+
+       

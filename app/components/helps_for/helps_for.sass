@@ -1,0 +1,238 @@
+$roboto: 'Roboto', sans-serif;
+
+.helps_for
+    padding-left: 10px !important
+    padding-right: 10px !important
+    padding: 115px 10px 122px
+    background-image: url(../img/vector-bg.png)
+    background-color: #eaedf2
+    font-family: $roboto
+    .wrapper
+        .title
+            text-align: center
+            margin: 0 0 46px 0
+        .help-blocks
+            display: flex
+            justify-content: space-between
+            .help-block
+                background-color: #fff
+                width: 370px
+                height: 695px
+                border-top-right-radius: 40px
+                border-bottom-left-radius: 40px
+                &.first
+                    margin-top: 61px
+                &.second
+                    height: 685px
+                    .descr 
+                        li
+                            margin: 0 0 42px
+                &.third
+                    margin-top: 61px
+                .type
+                    color: #fff
+                    font-size: 22px
+                    font-weight: 700
+                    background-color: #3b4893
+                    padding: 20px 0
+                    border-top-right-radius: 40px
+                    text-align: center
+                    
+                .t-title
+                    color: #363636
+                    font-size: 20px
+                    font-weight: 700
+                    text-align: center
+                    margin: 0 0 17px 0
+                .t-subtitle
+                    color: #272727
+                    font-size: 17px
+                    font-weight: 500
+                    margin: 0 0 25px 0
+                    padding: 0 25px
+                    line-height: 1.25
+                .help-img 
+                    border: 1px solid #ebebeb
+                    border-radius: 5px
+                    margin: 25px 25px 20px 25px
+                    padding: 0 0 10px 0
+                    text-align: center
+                .descr
+                    padding: 0 25px
+                    li 
+                        position: relative
+                        padding: 0 0 0 36px
+                        color: #363636
+                        font-size: 17px
+                        font-weight: 300
+                        line-height: 1.25
+                        margin: 0 0 40px 0
+                        &::before
+                            content: ''
+                            position: absolute
+                            top: 2px
+                            left: 0
+                            width: 20px
+                            height: 16px
+                            background: url(../img/check-orange.svg)
+                            background-size: 20px 16px 
+                            margin: 0 0 5px 0
+                        &:nth-child(1),
+                        &:nth-child(2),
+                        &:nth-child(3),
+                        &:nth-child(4)
+                            &::after
+                                content: ''
+                                position: absolute
+                                bottom: -18px
+                                right: 0
+                                width: 285px
+                                height: 1px
+                                background-color: #ebebeb
+                        
+            
+@media screen and (max-width: 1199px)
+    
+    .helps_for
+        .wrapper 
+            max-width: 1023px
+            .title
+                margin: 0 auto 45px
+                br 
+                    display: none
+            .mini-title
+                margin: 40px 0 35px
+            .help-blocks 
+                .help-block 
+                    width: 320px
+                    &.first
+                        height: 725px
+                    &.second
+                        height: 710px
+                    &.third
+                        height: 700px
+                        
+       
+
+
+@media screen and (max-width: 1023px)
+    
+    .helps_for 
+        .wrapper 
+            max-width: 767px
+            .title 
+                margin: 0px auto 40px
+                width: auto
+            .help-blocks 
+                
+                .help-block 
+                    width: 240px
+                    .type
+                        font-size: 20px
+                    .help-img
+                        img 
+                            width: 80%
+                    &.first
+                        height: 665px
+                    &.second
+                        height: 625px
+                        .descr
+                            li 
+                                margin: 0 0 28px
+                                
+                    &.third
+                        height: 650px
+                        .descr
+                            li 
+                                margin: 0 0 35px
+                    .descr
+                        padding: 0 10px
+                        li
+                            margin: 0 0 28px
+                            font-size: 16px
+                            &:nth-child(1),
+                            &:nth-child(2),
+                            &:nth-child(3),
+                            &:nth-child(4)
+                                &::after
+                                    width: 80%
+                                    left: 10%
+                            br 
+                                display: none
+                    
+                    
+       
+
+@media screen and (max-width: 767px)
+    
+    .helps_for 
+        .wrapper 
+            max-width: 479px
+            .title 
+                margin: 0 auto 27px
+                br 
+                    display: none
+            .mini-title
+                font-size: 27px
+                margin: 35px 0 30px
+            .help-blocks 
+                flex-wrap: wrap
+                justify-content: center
+                .help-block 
+                    width: 72%
+                    height: auto !important
+                    .t-subtitle
+                        font-size: 16px
+                    &.first,
+                    &.second
+                        margin: 0 0 30px !important
+                    &.third
+                        margin: 0 !important
+                    .help-img
+                        width: 50%
+                        margin: 20px auto
+                        padding: 0
+                        img 
+                            width: 80%
+                    .descr
+                        padding: 0 20px
+                        li
+                            margin: 0 0 20px !important
+                            &:nth-child(1),
+                            &:nth-child(2),
+                            &:nth-child(3),
+                            &:nth-child(4)
+                                &::after
+                                    bottom: -11px
+
+// @media screen and (max-width: 639px)
+
+@media screen and (max-width: 479px) 
+    
+    .helps_for 
+        .wrapper 
+            max-width: 320px
+            .title
+                margin: 0 auto 20px
+            .help-blocks 
+               
+                .help-block 
+                    width: 90%
+                    .type
+                        font-size: 19px
+                    .t-title 
+                        font-size: 19px
+                    .descr
+                        padding: 0 10px
+                        li 
+                            &:last-child
+                                margin: 0 0 25px !important  
+                    &.first,
+                    &.second
+                        margin: 0 0 25px !important
+
+
+                            
+                       
+
+

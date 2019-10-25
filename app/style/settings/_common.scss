@@ -20,8 +20,11 @@ button {
 	padding: 0;
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
-
 }
+
+input::-ms-clear {
+	display: none;
+ }
 
 .wrapper {
 	max-width: 1170px;
@@ -35,6 +38,7 @@ button {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 900;
 	line-height: 1.1;
+	.blu { color: #1c266b; }
 
 	@include r(1219) {
 		font-size: 42px;
@@ -56,22 +60,28 @@ button {
 	@include r(479) {
 		font-size: 26px;
 	}
+	
 }
 
 .btn{
-    font-size: 18px;
-    font-weight: bold;
-    color: #fff;
-    background: linear-gradient(to right, #f97017 0%,#f68b4a 50%,#f97017 100%);
-    padding: 8px 0;
-    max-width: 140px;
-    width: 100%;
-    text-align: center;
-    border-radius: 50px;
-    cursor: pointer;
-    border-bottom: 2px solid #e8631d;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	background: linear-gradient(to right, #f97017 0%,#f68b4a 50%,#f97017 100%);
+	padding: 8px 0;
+	max-width: 140px;
+	width: 100%;
+	text-align: center;
+	border-radius: 50px;
+	cursor: pointer;
+	border-bottom: 2px solid #e8631d;
+	&:hover{
+		border-bottom-color: #c15114;
+		background: linear-gradient(to right, #f7461c 0%,#f6774a 50%,#f7461c 100%);
+	}
     &:active{
-        border-bottom: 0;
+		border-bottom: none;
+		padding: 10px 0;
     }
 }
 

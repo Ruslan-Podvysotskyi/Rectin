@@ -1,7 +1,10 @@
-$roboto: 'Roboto', sans-serif;
+$roboto: 'Roboto', sans-serif
 
 .effect
-    padding: 105px 10px 
+    padding: 105px 10px 120px
+    padding-left: 10px !important
+    padding-right: 10px !important
+    font-family: $roboto
     .wrapper
         position: relative
     .title
@@ -10,172 +13,302 @@ $roboto: 'Roboto', sans-serif;
         text-align: center
     .mini-title 
         color: #272727
-        font-family: $roboto
         font-size: 30px
         font-weight: 700
         text-align: center
         margin: 0 auto 126px
-    .bullets
-        display: flex
-        flex-wrap: wrap
-        flex-direction: column
-        height: 330px
-        li 
-            width: 39%
+        .blue 
+            color: #1c266b
+    .bul-pack
+        position: relative
+        margin: 0 0 173px 0 
+        .bullets
             display: flex
-            justify-content: center
-            align-items: center
-            line-height: 1.25
-            &:nth-child(1)
-                text-align: right
-                margin: 0 260px 0 0
+            flex-wrap: wrap
+            flex-direction: column
+            height: 330px
+            li 
+                width: 39%
+                display: flex
+                justify-content: center
+                align-items: center
+                line-height: 1.25
+                .bul 
+                    width: 40px
+                    height: 40px
+                    background-color: #324697
+                    border-radius: 50%
+                    box-shadow: 2px 2px 0px 0px rgba(15,33,109,1)
+                    position: relative
+                    img
+                        position: absolute
+                        left: 8px
+                        top: 5px
+            
+                &:nth-child(1)
+                    text-align: right
+                    margin: 0 260px 0 0
+                    p 
+                        margin: 0 20px 0 0
+                &:nth-child(2)
+                    margin: 74px 0
+                    text-align: right
+                    position: relative
+                    p 
+                        margin: 0 20px 0 0
+                    &:before
+                        content: ''
+                        position: absolute
+                        top: -35px
+                        left: 0
+                        width: 380px
+                        height: 2px
+                        background-color: #d9d9d9
+                    &:after
+                        content: ''
+                        position: absolute
+                        bottom: -42px
+                        left: 0
+                        width: 380px
+                        height: 2px
+                        background-color: #d9d9d9
+                &:nth-child(3)
+                    text-align: right
+                    p 
+                        margin: 0 20px 0 0
+                &:nth-child(4)
+                    p 
+                        margin: 0 0 0 20px
+                &:nth-child(5)
+                    margin: 70px 0
+                    position: relative
+                    p 
+                        margin: 0 0 0 20px
+                    &:before
+                        content: ''
+                        position: absolute
+                        top: -35px
+                        right: 0
+                        width: 380px
+                        height: 2px
+                        background-color: #d9d9d9
+                    &:after
+                        content: ''
+                        position: absolute
+                        bottom: -37px
+                        right: 0
+                        width: 380px
+                        height: 2px
+                        background-color: #d9d9d9
+                &:nth-child(6)
+                    p 
+                        margin: 0 0 0 20px
                 p 
-                    margin: 0 20px 0 0
-            &:nth-child(2)
-                margin: 74px 0
-                text-align: right
-                position: relative
-                p 
-                    margin: 0 20px 0 0
-                &:before
-                    content: ''
-                    position: absolute
-                    top: -35px
-                    left: 0
-                    width: 380px
-                    height: 2px
-                    background-color: #d9d9d9
-                &:after
-                    content: ''
-                    position: absolute
-                    bottom: -42px
-                    left: 0
-                    width: 380px
-                    height: 2px
-                    background-color: #d9d9d9
-            &:nth-child(3)
-                text-align: right
-                p 
-                    margin: 0 20px 0 0
-            &:nth-child(4)
-                p 
-                    margin: 0 0 0 20px
-            &:nth-child(5)
-                margin: 70px 0
-                position: relative
-                p 
-                    margin: 0 0 0 20px
-                &:before
-                    content: ''
-                    position: absolute
-                    top: -35px
-                    right: 0
-                    width: 380px
-                    height: 2px
-                    background-color: #d9d9d9
-                &:after
-                    content: ''
-                    position: absolute
-                    bottom: -37px
-                    right: 0
-                    width: 380px
-                    height: 2px
-                    background-color: #d9d9d9
-            &:nth-child(6)
-                p 
-                    margin: 0 0 0 20px
-            p 
-                margin: 0
-                padding: 0
-                width: 370px
-                color: #464646
-                font-family: $roboto
-                font-size: 18px
-                font-weight: 500
-                span 
-                    color: #363636
-                    font-family: $roboto
-                    font-size: 22px
-                    font-weight: 700
-    .pack
-        position: absolute
-        bottom: -110px
-        left: 345px
-        width: 376px
-        height: 523px
-        .back
+                    margin: 0
+                    padding: 0
+                    width: 370px
+                    color: #464646
+                    font-size: 18px
+                    font-weight: 500
+                    span 
+                        color: #363636
+                        font-size: 22px
+                        font-weight: 700
+        .pack-c
             position: absolute
-            top: 60px
-            left: 125px
-            background-color: #ecf1f5
-            width: 230px
-            height: 405px
-            border-top-right-radius: 40px
-            border-bottom-left-radius: 40px
-            z-index: 1
-        .product
-            position: absolute
-            top: 0
-            right: 50px
-            z-index: 3
-        .product-colp
-            position: absolute
-            bottom: -8px
-            left: 0
-            z-index: 4
-        .natural
-            position: absolute
-            bottom: 58px
-            right: 0
-            z-index: 2
+            bottom: -110px
+            left: 345px
+            width: 376px
+            height: 523px
+            .back-c
+                position: absolute
+                top: 60px
+                left: 125px
+                background-color: #ecf1f5
+                width: 230px
+                height: 405px
+                border-top-right-radius: 40px
+                border-bottom-left-radius: 40px
+                z-index: 1
+            .product-c
+                position: absolute
+                top: 0
+                right: 50px
+                z-index: 3
+            .product-colp-c
+                position: absolute
+                bottom: -8px
+                left: 0
+                z-index: 4
+            .natural-c
+                position: absolute
+                bottom: 58px
+                right: 0
+                z-index: 2
     .order 
-        background-color: #3b4893
+        background-color: rgba(59, 72, 147, 0.9)
+        width: 100%
+        min-height: 252px
+        border-top-right-radius: 40px
+        border-bottom-left-radius: 40px
+        padding: 39px 49px
+        .order-title
+            color: #fff
+            font-size: 32px
+            font-weight: 500
+        .time 
+            &__value 
+                width: 305px
+            &__cont
+                width: 93px
+                &-val 
+                    font-size: 28px
+                    padding: 13px 14.5px
+            &__dot 
+                font-size: 28px
+                color: #fff
+
 
 
    
 
 @media screen and (max-width: 1199px)
-    .wrapper 
-        max-width: 1023px
+    
     .effect
+        overflow-x: hidden
+        .wrapper 
+            max-width: 1023px
         .title
             margin: 0 auto 45px
         .mini-title
             margin: 40px 0 35px
+        .bul-pack
+            .bullets
+                height: 405px
+                li 
+                    &:nth-child(1)
+                        margin: 0 220px 0 0
+                    &:nth-child(2)
+                        margin: 74px 0
+                        text-align: right
+                        position: relative
+                    p 
+                        margin: 0 20px 0 0
+                    &:nth-child(2)
+                        &:before
+                            right: 40px
+                            left: auto
+                            width: 300px
+                        &:after
+                            right: 40px
+                            left: auto
+                            width: 300px
+                    &:nth-child(5)
+                        &:before
+                            left: 40px
+                            right: auto
+                            width: 300px
+                        &:after
+                            left: 40px
+                            right: auto
+                            width: 300px
+                    br 
+                        display: none
+                    p 
+                        width: 280px
+            .pack-c
+                bottom: -125px
+                left: 270px
        
 
 
 @media screen and (max-width: 1023px)
-    .wrapper 
-        max-width: 767px
+    
     .effect 
-        padding: 0 10px
+        .wrapper 
+            max-width: 767px
         .title 
-            margin: 0px auto 40px
+            margin: 0px auto
             width: auto
+        .mini-title 
+            margin: 30px 0 35px
+            font-size: 27px
+        .bul-pack 
+            margin: 0 0 40px
+            .bullets
+                height: 405px
+                li 
+                    width: 50%
+                    p 
+                        order: 2
+                    .bul 
+                        order: 1
+                    &:nth-child(1)
+                        margin: 0
+            .pack-c 
+                position: relative
+                bottom: auto
+                top: 15px
+                left: 140px
+        
        
 
 @media screen and (max-width: 767px)
-    .wrapper 
-        max-width: 479px
+    
     .effect 
+        .wrapper 
+            max-width: 479px
         .title 
             margin: 0 auto 27px
             br 
                 display: none
+        .bul-pack 
+            .bullets
+                height: auto
+                li 
+                    width: 100%
+                    margin: 0 0 30px !important
+                    p 
+                        width: 70%
+                        text-align: left
+                        margin: 0 0 0 20px !important
+                        font-size: 17px
+                        .bold
+                            font-size: 18px
+                    &:nth-child(2)
+                        &:before
+                            content: none
+                        &:after
+                            content: none
+                    &:nth-child(5)
+                        &:before
+                            content: none
+                        &:after
+                            content: none
+            .pack-c 
+                top: 0px
+                left: 10px
         .mini-title
-            font-size: 27px
-            margin: 35px 0 30px
+            font-size: 24px
+            margin: 30px 0 30px
 
 // @media screen and (max-width: 639px)
 
 @media screen and (max-width: 479px) 
-    .wrapper 
-        max-width: 320px
+    
     .effect 
+        .wrapper 
+            max-width: 320px
+        .bul-pack 
+            .bullets
+            .pack-c
+                left: -80px
+                .product-colp-c
+                    display: none
         .title
             margin: 0 auto 20px
         .mini-title
+            width: 230px
             font-size: 20px
-            margin: 25px 0 20px
+            margin: 25px auto 20px
        

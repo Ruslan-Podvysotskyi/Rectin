@@ -64,6 +64,35 @@
                 Избавьтесь<br>
                 от геморроя
             </h3>
+            <div class="form__sale__eff">
+                <div class="form__sale__eff-procwrap">
+                    <p class="form__sale__eff-proc">50%</p>
+                </div>
+                <div class="form__sale__eff-descwrap">
+                    <p class="form__sale__eff-desc">Скидка</p>
+                </div>
+            </div>
+            <div class="form__price__eff">
+                <div class="form__price__eff-val">
+                    <h5 class="form__price__eff-title-b">Старая цена</h5>
+                    <p class="form__price__eff-before">
+                        <span class="x_price_previous form__price__eff-before_line">1980</span><span
+                            class="x_currency form__price__eff-before_size">руб</span>
+                    </p>
+                </div>
+                <div class="form__price__eff-val">
+                    <h5 class="form__price__eff-title-a">Новая цена</h5>
+                    <p class="form__price__eff-after">
+                        <span class="x_price_current">990</span><span
+                            class="x_currency form__price__eff-after_size">руб</span><span
+                            class="form__price__eff-after_size">*</span>
+                    </p>
+                </div>
+            </div>
+            <div class="end-sale">
+                До конца акции<br>
+                 осталось!
+            </div>
             <div class="time__value">
                 <div class="time__cont">
                     <span class="hours time__cont-val"></span>
@@ -80,6 +109,40 @@
                     <span class="seconds time__cont-val"></span>
                 </div>
             </div>
+            <form action="/submit" method="post" class="x_order_form form__cont">
+                <div class="form__input-wrap">
+                    <label for="input-name" class="form__input-icon">
+                        <img src="img/name.svg" alt="name">
+                    </label>
+
+                    <input id="input-name" type="text" name="name" required class="form__input"
+                        placeholder="Ваше имя">
+                </div>
+                <div class="form__select">
+                    <div class="x_country_select">
+                        <select class="country-select" name="country_code">
+                            <option value="RU">Россия</option>
+                            <option value="BY">Беларусь</option>
+                            <option value="UA" selected="selected">Украина</option>
+                            <option value="KZ">Казахстан</option>
+                            <option value="KG">Кыргызстан</option>
+                            <option value="GE">Грузия</option>
+                            <option value="MD">Молдова</option>
+                            <option value="TH">Тайланд</option>
+                        </select>
+                    </div>
+                    <div class="custom-select">
+                        <div class="selected"></div>
+
+                        <div class="options"></div>
+                    </div>
+                    <input type="tel" name="phone" required class="form__input form__input_select" placeholder="Ваш телефон">
+                </div>
+
+                <button class="btn form__btn ever-popup-btn">
+                    Заказать<br> со скидкой
+                </button>
+            </form>
         </div>
     </div>
 </section>

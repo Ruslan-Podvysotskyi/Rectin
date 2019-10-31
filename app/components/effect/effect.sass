@@ -151,22 +151,153 @@ $roboto: 'Roboto', sans-serif
         min-height: 252px
         border-top-right-radius: 40px
         border-bottom-left-radius: 40px
-        padding: 39px 49px
+        padding: 39px 41px
+        position: relative
+        display: flex
+        flex-wrap: wrap
         .order-title
             color: #fff
             font-size: 32px
             font-weight: 500
+            padding: 0 0 0 5px
+        .end-sale
+            color: #ffffff
+            font-size: 18px
+            margin: 22px 19px 0 37px
         .time 
             &__value 
                 width: 305px
+                margin: 0
             &__cont
                 width: 93px
+                margin: 8px 0 0 0
                 &-val 
                     font-size: 28px
                     padding: 13px 14.5px
             &__dot 
                 font-size: 28px
                 color: #fff
+        .form__sale__eff
+            width: 90px
+            position: absolute
+            top: 36px
+            left: 317px
+            transform: translate(-50%, 0)
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+            &-procwrap 
+                background-color: #0f216d
+                padding: 10px 7px 12px 11px
+                border-radius: 26px 0 0
+                transform: skew(-7deg, -3deg)
+            &-proc 
+                font-size: 35px
+                font-weight: 900
+                color: #fff
+                transform: skew(9deg, -2deg)
+            &-descwrap 
+                background-color: #fec900
+                padding: 7px 14px 8px 10px
+                border-radius: 0 0 21px
+                -webkit-transform: skew(-7deg, -5deg)
+                transform: skew(-7deg, -5deg)
+                position: absolute
+                bottom: -18px
+                right: -17px
+            &-desc 
+                font-size: 14px
+                color: #000000
+                font-weight: 500
+        .form__price__eff
+            display: flex
+            justify-content: space-between
+            width: 100%
+            margin: 12px 0 0 169px
+            position: relative
+            width: 225px
+            &::before 
+                content: ''
+                width: 1px
+                height: 100%
+                background-color: #d1d0d0
+                position: absolute
+                top: 0
+                left: 50%
+                transform: translate(-5px, 0)
+
+            &-val 
+                text-align: left
+
+            &-title-b
+                font-size: 13px
+                color: #c2c6de
+            &-title-a
+                font-size: 13px
+                color: #ffffff
+
+            &-before 
+                font-size: 30px
+                color: #c2c6de
+                margin-top: 14px
+
+                &_size 
+                    font-size: 16px
+
+                &_line 
+                    position: relative
+
+                    &::before,
+                    &::after 
+                        content: ''
+                        width: 100%
+                        height: 1px
+                        background-color: #f23e2b
+                        position: absolute
+                        top: 50%
+                        left: 0
+
+                    &::before 
+                        transform: rotate(15deg)
+                    
+
+                    &::after 
+                        transform: rotate(-15deg)
+
+            &-after 
+                font-size: 40px
+                color: #ffffff
+                font-weight: 900
+                margin-top: 6px
+
+                &_size 
+                    font-size: 16px
+                    font-weight: 400
+
+        .form__cont 
+            display: flex 
+            margin: 30px 0 0 0
+        .form 
+            &__input
+                width: 365px 
+                margin: 0 20px 0 0 
+                &-icon 
+                    top: 45%
+            &__select
+                background-color: #fff
+                width: 365px 
+                margin: 0 20px 0 0 
+            &__btn
+                margin: 0
+                font-size: 26px
+                max-height: 65px
+
+
+            
+
+
+        
+    
 
 
 
@@ -219,6 +350,35 @@ $roboto: 'Roboto', sans-serif
             .pack-c
                 bottom: -125px
                 left: 270px
+        .order
+            justify-content: center
+            align-items: center
+            width: 67%
+            margin: auto
+            .end-sale
+                margin: 0px 19px 0 0
+            .form 
+                &__cont
+                    flex-wrap: wrap
+                    width: 50%
+                &__sale__eff
+                    left: 310px
+                    top: 41px
+                &__price__eff 
+                    margin: 12px 0 25px 155px
+                &__input
+                    width: 300px 
+                &__select
+                    width: 300px 
+                    margin: 0 0 16px 0
+                &__btn
+                    max-height: 100px
+                    padding: 25px 0px
+                    br 
+                        display: none
+
+                
+
        
 
 
@@ -250,6 +410,8 @@ $roboto: 'Roboto', sans-serif
                 bottom: auto
                 top: 15px
                 left: 140px
+        .order
+            width: 89%
         
        
 
@@ -291,6 +453,29 @@ $roboto: 'Roboto', sans-serif
         .mini-title
             font-size: 24px
             margin: 30px 0 30px
+        .order
+            padding: 30px 41px
+            &-title
+                padding: 0px 120px 0 0px !important
+            .end-sale
+                margin: 0 0 5px 0
+                br 
+                    display: none
+            .form 
+                &__cont
+                    width: 92%
+                    justify-content: center
+                &__sale__eff
+                    left: 306px
+                    top: 26px
+                &__price__eff 
+                    margin: 25px
+                &__input
+                    margin: auto
+                    &-wrap
+                        width: 300px
+                    
+
 
 // @media screen and (max-width: 639px)
 
@@ -311,4 +496,38 @@ $roboto: 'Roboto', sans-serif
             width: 230px
             font-size: 20px
             margin: 25px auto 20px
+        .order
+            padding: 20px
+            margin: 60px auto 0 auto
+            &-title
+                padding: 38px 0 0 0 !important
+                font-size: 23px !important
+                text-align: center
+            .end-sale
+                display: none
+            .time__value
+                display: none
+            .form 
+                &__cont
+                    width: 92%
+                    justify-content: center
+                    margin: 0
+                &__sale__eff
+                    left: 121px
+                    top: -34px
+                &__price__eff 
+                    margin: 20px 0 20px 0
+                &__input
+                    width: 225px
+                    &-wrap
+                        width: 225px
+                &__select
+                    width: 225px
+                    .form__input_select
+                            width: 153px
+                &__btn
+                    font-size: 22px
+                    padding: 15px 0
+                    br 
+                        display: block
        

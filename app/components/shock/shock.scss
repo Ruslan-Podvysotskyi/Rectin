@@ -1,0 +1,203 @@
+.shock{
+    padding: 191px 0 108px;
+    &__wrap{
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        width: 1170px;
+        padding-bottom: 73px;
+    }
+    & .title{
+        line-height: 1;
+    }
+    
+    &__slider{
+        max-width: 767px;
+       
+    }
+
+    &__slide{
+        max-width: 767px;
+        padding: 40px 50px 26px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-image: url('../img/shock_slideOne.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        border-radius: 10px;
+        &_two{
+            background-image: url('../img/shock_slideTwo.png');
+        }
+        &_three{
+            background-image: url('../img/shock_slideThree.png');
+        }
+        &-icon{
+            width: 50px;
+            visibility: hidden;
+            & img{
+                width: 100%;
+                display: block;
+            }
+        }
+        &-btn{
+            font-size: 25px;
+            color: #fff;
+            font-weight: bold;
+            padding: 20px 35px;
+            background-color: #f68b4a;
+            border-radius: 40px;
+            margin-top: 41px;
+            z-index: 3;
+            visibility: hidden;
+        }
+        &-description{
+            margin-top: 29px;
+            font-size: 22px;
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+            z-index: 2;
+            line-height: 1.2;
+            visibility: hidden;
+        }
+        &-footer{
+            font-size: 18px;
+            margin-top: 38px;
+            color: #fff;
+            font-weight: 500;
+            z-index: 2;
+            visibility: hidden;
+        }
+        
+        &.swiper-slide-active{
+            border-radius: 0 40px 0 40px;
+            .shock__slide-icon,
+            .shock__slide-btn,
+            .shock__slide-description,
+            .shock__slide-footer{
+                visibility: visible;
+            }
+        }
+    }
+}
+
+.swiper-button-next:after, .swiper-button-prev:after{
+    content: none;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    width: 46px;
+    height: 27px;
+}
+
+.swiper-button-next{
+    background-image: url('../img/arrow-grey-r.svg');
+}
+
+
+.swiper-button-next:hover,
+.swiper-button-next:focus{
+    background-image: url('../img/arrow-orange-r.svg');
+}
+
+.swiper-button-prev{
+    background-image: url('../img/arrow-grey-r.svg');
+    transform: scaleX(-1);
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 0 6px;
+}
+
+.swiper-pagination-bullet{
+    width: 30px;
+    height: 30px;
+    background-color: #c4cfda;
+    border: 7px solid #fff;
+    box-shadow: 0px 0px 0px 1px rgba(225,225,225,0);
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background-color: #f77828;
+    box-shadow: 0px 0px 0px 1px rgba(225,225,225,1);
+}
+
+
+@media screen and (max-width: 1199px){
+    .shock{
+        padding: 121px 0 60px;
+    }
+    .shock__wrap{
+        width: 1004px;
+        padding-bottom: 50px;
+    }
+    .shock__slider{
+        max-width: 600px
+    }
+}
+
+@media screen and (max-width: 1023px){
+    .shock{
+        padding: 40px 0;
+    }
+    .shock__wrap{
+        width: 748px;
+        margin-top: 30px;
+    }
+    .shock__slide-btn{
+        margin-top: 20px;
+    }
+    .shock__slide-description{
+        font-size: 18px;
+    }
+    .shock__slide-footer{
+        margin-top: 25px;
+        font-size: 16px;
+    }
+    
+}
+
+@media screen and (max-width: 767px){
+    .shock{
+        padding: 30px 0;
+    }
+    .shock__wrap{
+        max-width: 600px;
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 639px){
+    .shock{
+        padding: 25px 0;
+    }
+    .shock__slide, 
+    .shock__slider{
+        max-width: 460px;
+    }
+
+    .shock__slide{
+        padding: 20px;
+    }
+
+    .shock__wrap{
+        max-width: 460px;
+    }
+}
+
+@media screen and (max-width: 479px){
+    .shock__slide, 
+    .shock__slider{
+        max-width: 300px;
+    }
+    .shock__wrap{
+        max-width: 300px;
+    }
+
+    .shock__slide-description{
+        font-size: 16px;
+    }
+}

@@ -38,6 +38,7 @@ input::-ms-clear {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 900;
 	line-height: 1.1;
+	text-align: center;
 	.blu { color: #1c266b; }
 
 	@include r(1219) {
@@ -81,7 +82,7 @@ input::-ms-clear {
 	}
     &:active{
 		border-bottom: none;
-		padding: 10px 0;
+		
     }
 }
 

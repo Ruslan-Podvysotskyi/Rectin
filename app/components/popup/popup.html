@@ -1,0 +1,104 @@
+<div class="popup ever-popup-build">
+    <div id="cloneThis">
+        <div class="popup__wrap" >
+            <div class="popup-prod">
+                <div class="product product_popup">
+                    <img src="img/product.png" alt="product">
+                    <div class="product__before product__before_pop">
+                        <img src="img/product-colp.png" alt="prod">
+                    </div>
+                </div>
+            </div>
+            <div class="header__form">
+                <div class="form form__popup">
+                    <div class="form__sale">
+                        <div class="form__sale-procwrap">
+                            <p class="form__sale-proc">50%</p>
+                        </div>
+                        <div class="form__sale-descwrap">
+                            <p class="form__sale-desc">Скидка</p>
+                        </div>
+                    </div>
+                    <h2 class="form__title">
+                        Только сегодня!<br>
+                        <span class="form__title_color date-0">04 октября</span>
+                    </h2>
+                    <div class="form__price">
+                        <div class="form__price-val">
+                            <h5 class="form__price-title">Старая цена</h5>
+                            <p class="form__price-before">
+                                <span class="x_price_previous form__price-before_line">1980</span><span
+                                    class="x_currency form__price-before_size">руб</span>
+                            </p>
+                        </div>
+                        <div class="form__price-val">
+                            <h5 class="form__price-title">Новая цена</h5>
+                            <p class="form__price-after">
+                                <span class="x_price_current">990</span><span
+                                    class="x_currency form__price-after_size">руб</span><span
+                                    class="form__price-after_size">*</span>
+                            </p>
+                        </div>
+                    </div>
+                    <form action="/submit" method="post" class="x_order_form form__cont">
+                        <div class="form__input-wrap">
+                            <label for="input-name" class="form__input-icon">
+                                <img src="img/name.svg" alt="name">
+                            </label>
+
+                            <input id="input-name" type="text" name="name" required="" class="form__input"
+                                placeholder="Ваше имя">
+                        </div>
+                        <div class="form__select">
+                            <div class="x_country_select">
+                                <select class="country-select" name="country_code">
+                                    <option value="RU">Россия</option>
+                                    <option value="BY">Беларусь</option>
+                                    <option value="UA" selected="selected">Украина</option>
+                                    <option value="KZ">Казахстан</option>
+                                    <option value="KG">Кыргызстан</option>
+                                    <option value="GE">Грузия</option>
+                                    <option value="MD">Молдова</option>
+                                    <option value="TH">Тайланд</option>
+                                </select>
+                            </div>
+                            <div class="custom-select">
+                                <div class="selected UA"><span class="option__text">Украина</span></div>
+
+                                <div class="options"><a class="UA option" href="?&amp;country_code=UA"
+                                        data-value="UA"><span class="option__text">Украина</span></a><a
+                                        class="RU option" href="?&amp;country_code=RU" data-value="RU"><span
+                                            class="option__text">Россия</span></a><a class="BY option"
+                                        href="?&amp;country_code=BY" data-value="BY"><span
+                                            class="option__text">Беларусь</span></a><a class="KZ option"
+                                        href="?&amp;country_code=KZ" data-value="KZ"><span
+                                            class="option__text">Казахстан</span></a><a class="KG option"
+                                        href="?&amp;country_code=KG" data-value="KG"><span
+                                            class="option__text">Кыргызстан</span></a><a class="GE option"
+                                        href="?&amp;country_code=GE" data-value="GE"><span
+                                            class="option__text">Грузия</span></a><a class="MD option"
+                                        href="?&amp;country_code=MD" data-value="MD"><span
+                                            class="option__text">Молдова</span></a><a class="TH option"
+                                        href="?&amp;country_code=TH" data-value="TH"><span
+                                            class="option__text">Тайланд</span></a></div>
+                            </div>
+                            <input type="tel" name="phone" required="" class="form__input form__input_select"
+                                placeholder="Ваш телефон">
+                        </div>
+
+                        <button class="btn form__btn ever-popup-btn">
+                            Заказать<br>
+                            <span class="form__btn_size">со скидкой</span>
+                        </button>
+                    </form>
+                    <p class="form__star-desc">*при заказе курса</p>
+                </div>
+                <p class="form__privacy form__privacy_popup">
+                    Конфиденциальность личных
+                    данных гарантирована!
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>

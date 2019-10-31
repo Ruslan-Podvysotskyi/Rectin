@@ -722,6 +722,7 @@
     .header .wrapper {
         padding: 0 10px;
     }
+    
 
     .header__nav-link,
     .time__title {
@@ -805,7 +806,10 @@
     .header.block {
         padding: 0;
     }
-
+    .header__cont{
+        max-width: 748px;
+        margin: 0 auto;
+    }
     .header__man,
     .header__nav {
         display: none;

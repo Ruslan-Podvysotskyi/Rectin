@@ -52,3 +52,20 @@ var sliderSelector = '.swiper-container',
         }
     };
 var mySwiper = new Swiper(sliderSelector, options);
+
+function notBlur (e){
+    let target = e.target;
+
+    if(target.classList.contains('shock__slide-btn')){
+        if (!target.parentNode.classList.contains('notBlur')){
+            target.parentNode.classList.add('notBlur');
+        } else {
+            target.parentNode.classList.remove('notBlur');
+        }
+        
+    }
+}
+
+const shockWrap = document.querySelector('.shock__wrap');
+
+shockWrap.addEventListener('click', notBlur);

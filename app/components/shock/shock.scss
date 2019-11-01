@@ -1,5 +1,8 @@
 .shock{
     padding: 191px 0 108px;
+    &-arrow__wrap{
+        position: relative;
+    }
     &__wrap{
         display: flex;
         align-items: center;
@@ -23,20 +26,47 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        background-image: url('../img/shock_slideOne.png');
+        background-image: url('../img/blur_one.png');
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
         overflow: hidden;
         border-radius: 10px;
         &_two{
-            background-image: url('../img/shock_slideTwo.png');
+            background-image: url('../img/blur_two.jpg');
+           
         }
         &_three{
-            background-image: url('../img/shock_slideThree.png');
+            background-image: url('../img/blur_three.jpg');
+     
+        }
+        &.notBlur{
+            background-image: url('../img/shock_slideOne.png');
+            transition: 1.2s;
+            & .shock__slide-description,
+            .shock__slide-icon,
+            .shock__slide-footer{
+                opacity: 0;
+                transition: 1.2s;
+            }
+
+            & .shock__slide-btn{
+                opacity: 0.5;
+            }
+        }
+        &_two.notBlur{
+            background-image: url('../img/shock_slideTwo.jpg');
+            transition: 1.2s;
+        }
+        &_three.notBlur{
+            background-image: url('../img/shock_slideThree.jpg');
+            transition: 1.2s;
         }
         &-icon{
             width: 50px;
             visibility: hidden;
+            opacity: 1;
+            transition: 1.2s;
             & img{
                 width: 100%;
                 display: block;
@@ -52,6 +82,9 @@
             margin-top: 41px;
             z-index: 3;
             visibility: hidden;
+            cursor: pointer;
+            opacity: 1;
+            transition: 1.2s;
         }
         &-description{
             margin-top: 29px;
@@ -62,6 +95,9 @@
             z-index: 2;
             line-height: 1.2;
             visibility: hidden;
+            opacity: 1;
+            transition: 1.2s;
+            text-shadow: 1px 1px 1px #000;
         }
         &-footer{
             font-size: 18px;
@@ -70,6 +106,9 @@
             font-weight: 500;
             z-index: 2;
             visibility: hidden;
+            opacity: 1;
+            transition: 1.2s;
+            text-shadow: 1px 1px 1px #000;
         }
         
         &.swiper-slide-active{
@@ -95,6 +134,7 @@
 
 .swiper-button-next{
     background-image: url('../img/arrow-grey-r.svg');
+    right: -60px;
 }
 
 
@@ -106,6 +146,7 @@
 .swiper-button-prev{
     background-image: url('../img/arrow-grey-r.svg');
     transform: scaleX(-1);
+    left: -60px;
 }
 
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
@@ -125,13 +166,21 @@
     box-shadow: 0px 0px 0px 1px rgba(225,225,225,1);
 }
 
+@media screen and (max-width: 1306px){
+    .swiper-button-next{
+        right: 20px;
+    }
+    .swiper-button-prev{
+        left: 20px;
+    }
+}
 
 @media screen and (max-width: 1199px){
     .shock{
         padding: 121px 0 60px;
     }
     .shock__wrap{
-        width: 1004px;
+        width: 994px;
         padding-bottom: 50px;
     }
     .shock__slider{
@@ -144,7 +193,7 @@
         padding: 40px 0;
     }
     .shock__wrap{
-        width: 748px;
+        width: 738px;
         margin-top: 30px;
     }
     .shock__slide-btn{
@@ -176,7 +225,7 @@
     }
     .shock__slide, 
     .shock__slider{
-        max-width: 460px;
+        max-width: 450px;
     }
 
     .shock__slide{
@@ -184,17 +233,17 @@
     }
 
     .shock__wrap{
-        max-width: 460px;
+        max-width: 450px;
     }
 }
 
 @media screen and (max-width: 479px){
     .shock__slide, 
     .shock__slider{
-        max-width: 300px;
+        max-width: 290px;
     }
     .shock__wrap{
-        max-width: 300px;
+        max-width: 290px;
     }
 
     .shock__slide-description{

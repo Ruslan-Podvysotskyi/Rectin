@@ -80,7 +80,7 @@ $roboto: 'Roboto', sans-serif
             margin: 53px 0 0 0 
             &-form
                 width: 100%
-                input
+                #rev
                     font-size: 21px
                     color: #464646
                     font-weight: 500
@@ -89,6 +89,9 @@ $roboto: 'Roboto', sans-serif
                     border-radius: 50px
                     padding: 24px 0 24px 32px
                     margin: 0 1% 0 0
+                    &:focus
+                        border: 1px solid #dfe1e2
+                        box-shadow: inset 0px 0px 0px rgba(255,0,0,0.5)
                 .btn
                     max-width: 19%
                     padding: 18px 0
@@ -99,7 +102,12 @@ $roboto: 'Roboto', sans-serif
                         margin-top: -2px
                         border-bottom: none
                         padding: 20px 0 20px 0
-                            
+            .success
+                display: none
+                width: 100%
+                .subtitle
+                    margin: 15px auto 0 auto
+                                
 @media screen and (max-width: 1199px)
     .reviews
         .wrapper 
@@ -112,7 +120,7 @@ $roboto: 'Roboto', sans-serif
                     height: 295px
             .leave-review
                 &-form
-                    input
+                    #rev
                         width: 77.5%
                         margin: 0 1% 0 0
                     .btn
@@ -153,7 +161,7 @@ $roboto: 'Roboto', sans-serif
             .leave-review
                 margin: 40px 0 0
                 &-form
-                    input
+                    #rev
                         width: 70.5%
                         margin: 0 1% 0 0
                     .btn
@@ -199,13 +207,16 @@ $roboto: 'Roboto', sans-serif
                     display: flex
                     flex-wrap: wrap
                     justify-content: center
-                    input
+                    #rev
                         width: 450px
                         margin: 0 0 25px 0
                     .btn
                         max-width: 225px
                         &:active
                             margin-top: 0
+                .success
+                    .subtitle
+                        margin: 0 auto
 
  
 

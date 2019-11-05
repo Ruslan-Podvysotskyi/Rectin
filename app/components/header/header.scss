@@ -1,6 +1,6 @@
 .header {
     background: #e9eef3 url('../img/vector-bg.png');
-
+    font-family: 'Roboto', sans-serif;
     &__top {
         background-color: #fff;
         padding: 20px 0;
@@ -505,7 +505,8 @@
         color: #403737;
         margin-top: 20px;
         position: relative;
-
+        line-height: 1.1;
+        width: 100%;
         &::before {
             content: '';
             width: 20px;

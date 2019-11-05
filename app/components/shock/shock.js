@@ -53,19 +53,33 @@ var sliderSelector = '.swiper-container',
     };
 var mySwiper = new Swiper(sliderSelector, options);
 
-function notBlur (e){
+function blur (e){
     let target = e.target;
 
     if(target.classList.contains('shock__slide-btn')){
         if (!target.parentNode.classList.contains('notBlur')){
             target.parentNode.classList.add('notBlur');
+            target.innerHTML = 'Скрыть';
         } else {
             target.parentNode.classList.remove('notBlur');
+            target.innerHTML = 'Шок-контент';
         }
-        
     }
 }
 
-const shockWrap = document.querySelector('.shock__wrap');
+function addBlur (e){
+    let target = e.target;
+    const notBlur = document.querySelectorAll('.shock__slide');
 
-shockWrap.addEventListener('click', notBlur);
+    if(target.classList.contains('addBlur')){
+        for(let i = 0; i < notBlur.length; i++){
+            notBlur[i].classList.remove('notBlur');
+        }
+    }
+    
+}
+const shockWrap = document.querySelector('.shock__wrap');
+const shockArrow = document.querySelector('.shock-arrow__wrap');
+
+shockWrap.addEventListener('click', blur);
+shockArrow.addEventListener('click', addBlur);

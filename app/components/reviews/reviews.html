@@ -46,15 +46,35 @@
         </div>
         <div class="leave-review">
             <form action="" class="leave-review-form" id="otz">
-                <input type="text" placeholder="Добавить отзыв" id="rev">
+                <div>
+                    <input type="text" placeholder="Имя" id="rev1">
+                    <input type="number" placeholder="Возраст" id="rev2" min="1" max="120">
+                    <input type="text" placeholder="Город" id="rev3">
+                    <label for="rev4"><img src="img/clip.png" alt="" width="40" height="40"><span class="filename">Прикрепить фото</span></label>
+                </div>
+                    <input type="file" name="f" id="rev4" accept="image/*,image/jpeg">
+                <textarea rows="1" placeholder="Добавить отзыв" id="rev" style="color: #888;font-size: 21px;font-weight:300;font-family: 'Roboto', sans-serif"></textarea>
                 <button class="btn" onclick="show_msg();return false;">Отправить</button>
             </form>
-            <div class="success" id="popup_otz">
-                    <div class="subtitle">
-                            Спасибо за Ваш отзыв!<br> Он был отправлен на модерацию.
-                        </div>
-                </div>
+           
         </div>
+        <div class="modal-empty">
+            <div class="backgroundM"></div>
+            <div class="text">
+            Пожалуйста, заполните поле "<span></span>"!
+            <img src="img/cross.png" alt="" id="cross">
+            </div>
+        
+        </div>
+        <div class="modal-success">
+                <div class="backgroundM"></div>
+                <div class="text">
+                        Благодарим вас за отзыв!
+                <img src="img/cross.png" alt="" id="cross2">
+                </div>
+            
+            </div>
+        
         
     </div>
 </section>

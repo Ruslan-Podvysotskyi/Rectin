@@ -36,6 +36,7 @@ $roboto: 'Roboto', sans-serif
                 p 
                     font-size: 22px
                     color: #464646
+                    line-height: 1.2
 
         &.second
             position: relative
@@ -497,7 +498,17 @@ $roboto: 'Roboto', sans-serif
                 .preview-item
                     .doc  
                         .imgP 
-                            img
-                                opacity: .7
-                                &:hover
-                                    opacity: 1
+                            position: relative
+                            &::after
+                                content: ''
+                                position: absolute
+                                top: 0
+                                left: 0
+                                width: 100%
+                                height: 100%
+                                border-radius: 0 40px 0 40px 
+                                background-color: rgba(20, 10, 0, .4)
+                                transition: background-color .4s
+                            &:hover
+                                &::after
+                                    background-color: rgba(20, 10, 0, 0)

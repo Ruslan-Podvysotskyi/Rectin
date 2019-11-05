@@ -2,7 +2,7 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
-
+	margin-top: 60px;
 	font-size: 14px;
 	overflow-x: hidden;
 }
@@ -24,6 +24,22 @@ button {
 
 input::-ms-clear {
 	display: none;
+ }
+
+ .plashka {
+	 position: fixed;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 background-color: rgb(167, 25, 0);
+	 height: 60px;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 z-index: 9999;
+	 font-family: 'Roboto', sans-serif;
+	 color: white;
+	 font-size: 18px;
  }
 
 .wrapper {

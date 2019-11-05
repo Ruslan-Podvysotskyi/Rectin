@@ -106,7 +106,7 @@ $roboto: 'Roboto', sans-serif
                 p 
                     margin: 0
                     padding: 0
-                    width: 370px
+                    width: 380px
                     color: #464646
                     font-size: 18px
                     font-weight: 500
@@ -163,7 +163,8 @@ $roboto: 'Roboto', sans-serif
         .end-sale
             color: #ffffff
             font-size: 18px
-            margin: 22px 19px 0 37px
+            line-height: 22px
+            margin: 18px auto 0 45px
         .time 
             &__value 
                 width: 305px
@@ -211,20 +212,11 @@ $roboto: 'Roboto', sans-serif
                 font-weight: 500
         .form__price__eff
             display: flex
-            justify-content: space-between
+            justify-content: center
             width: 100%
             margin: 12px 0 0 169px
             position: relative
-            width: 225px
-            &::before 
-                content: ''
-                width: 1px
-                height: 100%
-                background-color: #d1d0d0
-                position: absolute
-                top: 0
-                left: 50%
-                transform: translate(-5px, 0)
+            width: auto
 
             &-val 
                 text-align: left
@@ -240,6 +232,17 @@ $roboto: 'Roboto', sans-serif
                 font-size: 30px
                 color: #c2c6de
                 margin-top: 14px
+                margin-right: 26px
+                position: relative
+                &::before 
+                    content: ''
+                    width: 1px
+                    height: 50px
+                    background-color: rgba(255, 255, 255, 0.15)
+                    position: absolute
+                    top: -25px
+                    right: -17px
+                    transform: translate(-5px, 0)
 
                 &_size 
                     font-size: 16px
@@ -282,7 +285,7 @@ $roboto: 'Roboto', sans-serif
                 width: 365px 
                 margin: 0 20px 0 0 
                 &-icon 
-                    top: 45%
+                    top: 50%
             &__select
                 background-color: #fff
                 width: 365px 
@@ -291,13 +294,20 @@ $roboto: 'Roboto', sans-serif
                 margin: 0
                 font-size: 26px
                 max-height: 65px
+                br 
+                    display: none
 
 
             
 
 
         
-    
+@media screen and (min-width: 1200px)  and (max-width: 1252px)  
+    .effect 
+        .order 
+            .form__btn
+                line-height: 22px
+                padding: 8px 0
 
 
 

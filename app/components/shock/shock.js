@@ -25,7 +25,7 @@ var sliderSelector = '.swiper-container',
         breakpoints: {
             1189: {
                 coverflowEffect: {
-                    depth: 1160, // Depth offset in px (slides translate in Z axis)
+                    depth: 970, // Depth offset in px (slides translate in Z axis)
                 }
             },
             1023: {
@@ -70,10 +70,12 @@ function blur (e){
 function addBlur (e){
     let target = e.target;
     const notBlur = document.querySelectorAll('.shock__slide');
+    const showBtn = document.querySelectorAll('.shock__slide-btn');
 
     if(target.classList.contains('addBlur')){
         for(let i = 0; i < notBlur.length; i++){
             notBlur[i].classList.remove('notBlur');
+            showBtn[i].innerHTML = 'Шок-контент';
         }
     }
     

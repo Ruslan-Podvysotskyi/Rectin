@@ -1,21 +1,10 @@
 .footer{
-    padding: 80px 0 40px;
-    & .wrapper{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    &__link{
-        font-size: 16px;
-        color: #666666;
-        margin-top: 15px;
-    }
+    padding: 60px 0 40px;
 }
 
 @media screen and (max-width: 1199px){
     .footer {
-        padding: 60px 0 30px;
+        padding: 40px 0 30px;
     }
 }
 
@@ -23,4 +12,14 @@
     .footer {
         padding: 30px 0 30px;
     }
+}
+
+.ev-footer__logo svg {
+    width: 55px;
+    height: 50px;
+}
+
+.ev-footer__link {
+    margin-top: 15px;
+    font-size: 17px;
 }
